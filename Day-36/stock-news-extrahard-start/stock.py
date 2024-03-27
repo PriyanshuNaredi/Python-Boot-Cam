@@ -10,10 +10,10 @@ COMPANY_NAME = "DBL"
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 
-STOCK_API_KEY = "AFMU9H9E9EFSZNIK"
-NEWS_API_KEY = "5c74e2800a864abb8bd9a542630a29b7"
-TWILIO_SID = "ACaa38a9714a33546e063b885ccc1f9acc"
-TWILIO_AUTH_TOKEN = "347ea8ab8687eee23764f7d281303ce5"
+STOCK_API_KEY = ""
+NEWS_API_KEY = ""
+TWILIO_SID = ""
+TWILIO_AUTH_TOKEN = ""
 
 ## STEP 1: Use https://www.alphavantage.co/documentation/#daily
 # When stock price increase/decreases by 5% between yesterday and the day before yesterday then print("Get News").

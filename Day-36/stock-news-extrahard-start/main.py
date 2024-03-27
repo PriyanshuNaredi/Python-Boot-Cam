@@ -6,18 +6,18 @@ STOCK = "HDFC BANK"
 COMPANY_NAME = "HDFC BANK"
 
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
-STOCK_API_KEY = "AFMU9H9E9EFSZNIK"
+STOCK_API_KEY = ""
 
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
-NEWS_API_KEY = "5c74e2800a864abb8bd9a542630a29b7"
+NEWS_API_KEY = ""
 
-TWILIO_SID = "ACaa38a9714a33546e063b885ccc1f9acc"
-TWILIO_AUTH_TOKEN = "347ea8ab8687eee23764f7d281303ce5"
+TWILIO_SID = ""
+TWILIO_AUTH_TOKEN = ""
 
 MAIL_PROVIDER_SMTP_ADDRESS = "smtp.gmail.com"
 PORT = 587
-MY_EMAIL = "linuxrdb007@gmail.com"
-MY_PASSWORD = "cuzm rset fwpn ytxe"
+MY_EMAIL = "@gmail.com"
+MY_PASSWORD = ""
 
 # Stock:
 # stock_prams = {
