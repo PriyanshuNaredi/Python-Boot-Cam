@@ -6,7 +6,7 @@ def get_all_airports():
     url = "https://api.tequila.kiwi.com/locations/query"
 
     headers = {
-        "apikey": "-eJ-"
+        "apikey": "--"
     }
 
     params = {
