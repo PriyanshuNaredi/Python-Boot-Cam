@@ -1,16 +1,16 @@
-b from polygon import RESTClient
+from polygon import RESTClient
 from polygon.rest import models
 
-client = RESTClient("")
+# client = RESTClient("")
 
-aggs = client.get_aggs(
-    "AAPL",
-    1,
-    "day",
-    "2022-04-04",
-    "2022-04-04",
-)
-print(aggs)
+# aggs = client.get_aggs(
+#     "AAPL",
+#     1,
+#     "day",
+#     "2022-04-04",
+#     "2022-04-04",
+# )
+# print(aggs)
 
 # import requests
 # from twilio.rest import Client
