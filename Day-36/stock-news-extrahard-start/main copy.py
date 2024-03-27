@@ -1,4 +1,4 @@
-from polygon import RESTClient
+b from polygon import RESTClient
 from polygon.rest import models
 
 client = RESTClient("Kduw2oJScR4ygVP1Fe_6hGzQ5pKiYlI2")
@@ -15,17 +15,7 @@ print(aggs)
 # import requests
 # from twilio.rest import Client
 
-# STOCK = "HDFC BANK"
-# COMPANY_NAME = "HDFC BANK"
 
-# STOCK_ENDPOINT = "https://www.alphavantage.co/query"
-# STOCK_API_KEY = "Kduw2oJScR4ygVP1Fe_6hGzQ5pKiYlI2"
-
-# NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
-# NEWS_API_KEY = "5c74e2800a864abb8bd9a542630a29b7"
-
-# TWILIO_SID = "ACaa38a9714a33546e063b885ccc1f9acc"
-# TWILIO_AUTH_TOKEN = "347ea8ab8687eee23764f7d281303ce5"
 
 # # Stock:
 # # stock_prams = {
