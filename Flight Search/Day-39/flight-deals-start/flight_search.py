@@ -1,8 +1,8 @@
 import requests
 from flight_data import FlightData
 
-TEQUILA_ENDPOINT = "https://tequila-api.kiwi.com"
-TEQUILA_API_KEY = "cbapwkISP9BjfZEN3SaJXgcQWFoU-Di-"
+TEQUILA_ENDPOINT = "-api..com"
+TEQUILA_API_KEY = "-Di-"
 
 
 class FlightSearch:

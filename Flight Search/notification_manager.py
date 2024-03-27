@@ -1,15 +1,14 @@
 import smtplib
 from twilio.rest import Client
 
-TWILIO_SID = "ACaa38a9714a33546e063b885ccc1f9acc"
-TWILIO_AUTH_TOKEN = "347ea8ab8687eee23764f7d281303ce5"
-TWILIO_VIRTUAL_NUMBER = "+12404340466"
-TWILIO_VERIFIED_NUMBER = "+919340587377"
+TWILIO_SID = ""
+TWILIO_AUTH_TOKEN = ""
+TWILIO_VIRTUAL_NUMBER = "+"
+TWILIO_VERIFIED_NUMBER = "+"
 
 MAIL_PROVIDER_SMTP_ADDRESS = "smtp.gmail.com"
 PORT = 587
-MY_EMAIL = "linuxrdb007@gmail.com"
-MY_PASSWORD = "cuzm rset fwpn ytxe"
+MY_EMAIL = "@.com"
 
 
 class NotificationManager:

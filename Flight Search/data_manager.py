@@ -1,11 +1,8 @@
 import requests
 from pprint import pprint
 
-# SHEETY_PRICES_ENDPOINT = "https://api.sheety.co/1976f4a69865ccc81fec7e1a97c8843d/copyOfFlightDeals/prices"
-# SHEET_USERS_ENDPOINT = "https://api.sheety.co/1976f4a69865ccc81fec7e1a97c8843d/copyOfFlightDeals/users"
 
-SHEETY_PRICES_ENDPOINT = "https://api.sheety.co/284730e981fa63f7913b22ee2d02b3fc/copyOfFlightDeals/prices"
-SHEET_USERS_ENDPOINT = "https://api.sheety.co/284730e981fa63f7913b22ee2d02b3fc/copyOfFlightDeals/users"
+
 
 
 

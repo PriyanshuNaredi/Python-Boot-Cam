@@ -1,8 +1,7 @@
 import requests
 import sheety
 
-SHEETY_PRICES_ENDPOINT = "https://api.sheety.co/1976f4a69865ccc81fec7e1a97c8843d/copyOfFlightDeals/users"
-BEARER = "Pn"
+
 
 
 print("Welcome to Flight Club.\nWe find the best flight deals and email them to you.")
