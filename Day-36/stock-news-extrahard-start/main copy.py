@@ -1,7 +1,7 @@
 b from polygon import RESTClient
 from polygon.rest import models
 
-client = RESTClient("Kduw2oJScR4ygVP1Fe_6hGzQ5pKiYlI2")
+client = RESTClient("")
 
 aggs = client.get_aggs(
     "AAPL",
@@ -70,5 +70,5 @@ print(aggs)
 #     for article in formatted_articles_list:
 #         message = client.messages.create(
 #             body=article,
-#             from_='+12404340466',
-#             to='+919340587377')
+#             from_='',
+#             to='')
