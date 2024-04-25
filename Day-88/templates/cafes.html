@@ -8,7 +8,28 @@
     <div class="col-sm-12">
 
       <h1>All Cafes</h1>
-      <button><a href="{{ url_for('get_cafe_at_location') }} ">Search</a></button>
+
+      <form
+        id="contactForm"
+        name="sentMessage"
+        action="{{ url_for('get_cafe_at_location') }}"
+        method="post"
+      >
+        <div class="form-floating">
+          <input
+            class="form-control"
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Enter your name..."
+            required
+          />
+          <label for="name">Location</label>
+        <br />
+        <button class="btn btn-danger text-uppercase" id="submitButton" type="submit">
+          submit
+        </button>
+      </form>
 
 
       <table class="table table-dark table-striped table-hover">

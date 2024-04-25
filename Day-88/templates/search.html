@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% block title %}Restaurants{% endblock %} {% block
+content %}
+<div class="my-5">
+  <!-- * * * * * * * * * * * * * * *-->
+  <!-- * * Simplified SB Contact Form for the Tutorial* *-->
+  <form
+    id="contactForm"
+    name="sentMessage"
+    action="{{ url_for('add_a_cafe') }}"
+    method="post"
+  >
+
+  <input class="form-control me-2" type = "input" id="name" name="name" placeholder="Cafe Name" required> </br>
+  <input class="form-control me-2" type = "url" id="map_url" name="map_url" placeholder="Map Url" required> </br>
+  <input class="form-control me-2" type = "url" id="img_url" name="img_url" placeholder="Image Url" required> </br>
+  <input class="form-control me-2" type = "url" id="location" name="location" placeholder="Location" required> </br>
+  <input class="form-control me-2" type = "number" id="seats" name="seats" placeholder="No. of Seats" required> </br>
+  <input class="form-control me-2" type = "bool" id="has_toilet" name="has_toilet" placeholder="has toilet" required> </br>
+  <input class="form-control me-2" type = "bool" id="has_wifi" name="has_wifi" placeholder="has wifi" required> </br>
+  <input class="form-control me-2" type = "bool" id="has_sockets" name="has_sockets" placeholder="has sockets" required> </br>
+  <input class="form-control me-2" type = "bool" id="can_take_calls" name="can_take_calls" placeholder="can_take_calls" required> </br>
+  <input class="form-control me-2" type = "number" id="coffee_price" name="coffee_price" placeholder="coffee_price" required> </br>
+
+
+
+
+
+
+
+
+    <button
+      class="btn btn-danger text-uppercase"
+      id="submitButton"
+      type="submit"
+    >
+      submit
+    </button>
+  </form>
+</div>
+
+{% endblock %}

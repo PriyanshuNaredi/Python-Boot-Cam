@@ -117,15 +117,19 @@ def my_get_cafe_at_location(loc):
 @app.route("/search",methods=["GET", "POST"]) # Angela Way
 def get_cafe_at_location():
     if request.method == "POST":
-        query_location = request.args.get("loc")
+        name = request.form.get('name')
+        # query_location = request.args.get("name")
+        query_location = name
+        print(name)
         result = db.session.execute(db.select(Cafe).where(Cafe.location == query_location))
         # Note, this may get more than one cafe per location
         all_cafes = result.scalars().all()
         if all_cafes:
-            return jsonify(cafes=[cafe.to_dict() for cafe in all_cafes])
+            # return jsonify(cafes=[cafe.to_dict() for cafe in all_cafes])
+            return render_template('cafes.html',cafes=[cafe.to_dict() for cafe in all_cafes])
+        
         else:
             return jsonify(error={"Not Found": "Sorry, we don't have a cafe at that location."}), 404
-    return render_template("index.html")
 
 # HTTP POST - Create Record
 def str_to_bool(v):
@@ -137,21 +141,24 @@ def str_to_bool(v):
 
 @app.route("/add", methods=["GET", "POST"])
 def add_a_cafe():
-    new_cafe = Cafe(name=request.form["name"],
-                    map_url=request.form["map_url"],
-                    img_url=request.form["img_url"],
-                    location=request.form["location"],
-                    seats=request.form["seats"],
-                    has_toilet=str_to_bool(request.form["has_toilet"]),
-                    has_wifi=str_to_bool(request.form["has_wifi"]),
-                    has_sockets=str_to_bool(request.form["has_sockets"]),
-                    can_take_calls=str_to_bool(request.form["can_take_calls"]),
-                    coffee_price=request.form["coffee_price"]
-                    )
-    db.session.add(new_cafe)
-    db.session.commit()
+    if request.method == "POST":
+        new_cafe = Cafe(name=request.form["name"],
+                        map_url=request.form["map_url"],
+                        img_url=request.form["img_url"],
+                        location=request.form["location"],
+                        seats=request.form["seats"],
+                        has_toilet=str_to_bool(request.form["has_toilet"]),
+                        has_wifi=str_to_bool(request.form["has_wifi"]),
+                        has_sockets=str_to_bool(request.form["has_sockets"]),
+                        can_take_calls=str_to_bool(request.form["can_take_calls"]),
+                        coffee_price=request.form["coffee_price"]
+                        )
+        db.session.add(new_cafe)
+        db.session.commit()
 
-    return jsonify(response={"success": "Successfully added the new cafe"})
+        return jsonify(response={"success": "Successfully added the new cafe"})
+    return render_template('search.html')
+    
 
 # HTTP PUT/PATCH - Update Record
 
