@@ -10,7 +10,7 @@ parsed_pdf = parser.from_file("Day-91\consumer kavita vs ida.docx")
   
 # saving content of pdf 
 # you can also bring text only, by parsed_pdf['text']  
-# parsed_pdf['content'] returns string  
+
 data = parsed_pdf['content'] 
 # Printing of content  
 print(data)  
